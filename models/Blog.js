@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Blog = mongoose.model('Blog', { 
   slug: String,
   name: String,
-  createdBy: mongoose.Schema.Types.ObjectId,
+  createdBy: String,
   title: String,
   description: String,
   body: String,
