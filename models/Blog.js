@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const Blog = mongoose.model('Blog', { 
-  slug: String,
   name: String,
   createdBy: String,
   title: String,
@@ -11,7 +10,9 @@ const Blog = mongoose.model('Blog', {
   created: Date,
   updated: Date,
   published: Boolean,
-  format: String, // md || draft
+  slug: String,
+  format: String, // md || draft,
+  lang: String
 });
 
 module.exports = Blog;
